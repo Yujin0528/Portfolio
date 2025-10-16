@@ -1,1 +1,58 @@
 @import "tailwindcss";
+@import "../../public/font/font.css";
+
+@theme {
+  --font-basic: "Pretendard Variable", sans-serif;
+
+  /* 기본 색상 */
+  --color-black: #121212;
+  --color-white: #ffffff;
+
+  /* 메인 색상 */
+  --color-primary: #4876ef;
+  --color-primary-hover: #3562d4; /* hover 시 조금 어둡게 */
+
+  /* 텍스트 */
+  --color-text-primary: var(--color-black);
+  --color-text-secondary: #cfd0d4; /* 보조 텍스트 */
+  --color-text-inverse: var(--color-white);
+
+  /* 배경 */
+  --color-bg: var(--color-white);
+  --color-bg-dark: var(--color-black);
+
+  /* 보더 */
+  --color-border: #e5e5e5;
+  --color-border-dark: #333333;
+
+  /* 상태 색상 */
+  --color-success: #2ecc71;
+  --color-error: #e74c3c;
+  --color-warning: #f39c12;
+}
+
+/* 다크모드 */
+:root.dark {
+  --color-text: var(--color-white);
+  --color-text-inverse: var(--color-black);
+  --color-bg: var(--color-black);
+  --color-bg-dark: var(--color-white);
+}
+
+/* 커스텀 디자인 */
+@layer {
+  .period-mark {
+    color: #4876ef;
+  }
+
+  /* 마우스 드래그 시 색상변경 */
+  /* 라이트 모드 */
+  ::selection {
+    background-color: #38e8f2;
+  }
+
+  /* 다크 모드 */
+  .dark ::selection {
+    color: #121212;
+  }
+}
