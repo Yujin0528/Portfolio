@@ -5,6 +5,10 @@ import { ThemeProvider } from "next-themes";
 export const metadata: Metadata = {
   title: "Yujin's Portfolio",
   description: "프론트엔드 개발자 정유진의 포트폴리오입니다.",
+  openGraph: {
+    title: "Yujin's Portfolio",
+    description: "프론트엔드 개발자 정유진의 포트폴리오입니다.",
+  },
   icons:
     "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👩‍💻</text></svg>",
 };
