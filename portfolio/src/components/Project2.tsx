@@ -8,35 +8,35 @@ export default function Project2() {
     setOpen(open === index ? -1 : index);
   };
   return (
-    <div className="container w-full max-w-screen-xl min-h-screen px-6 mx-auto">
+    <div className="container w-full max-w-screen-xl min-h-[90vh] md:min-h-screen px-6  py-12 mx-auto">
       <div className="flex flex-col w-full min-h-screen">
         {/* 타이틀 */}
-        <div className="font-bold text-primary text-[clamp(1.875rem,8vw,7rem)] whitespace-nowrap tracking-tight m-3">
+        <div className="font-bold text-primary text-[clamp(1.875rem,6vw,6rem)] whitespace-nowrap tracking-tight m-3">
           <p>PROJECT 2.</p>
         </div>
         {/* 프로젝트 소개*/}
-        <div className="grid gap-6 px-3 md:gap-10 md:grid-cols-2 md:mt-10">
+        <div className="grid gap-6 px-3 mt-2 md:gap-10 md:grid-cols-2 md:mt-3">
           <div>
-            <p className="mb-2 text-lg font-semibold md:text-3xl ">
+            <p className="mb-2 text-lg font-semibold md:text-2xl ">
               코드의 그림자 <span className="font-bold period-mark">.</span>
             </p>
 
-            <p className="mb-4 text-md md:text-xl">2025.05 - 2025.05 (2주)</p>
+            <p className="mb-2 text-md md:text-xl">2025.05 - 2025.05 (2주)</p>
             <p className="md:text-lg ">Vanilla TS 기반의 인터랙티브 방탈출 게임</p>
 
             <div className="flex gap-10 justify-baseline">
               <a
                 href="https://codeofshadow.netlify.app/"
-                className="flex items-center gap-5 py-4 font-semibold hover:text-primary hover:after:content-['↗︎']"
+                className="flex items-center gap-2 py-4  font-semibold hover:text-primary hover:after:content-['↗︎']"
               >
-                <FaHome className="size-7" />
+                <FaHome className="size-5" />
                 Home
               </a>
               <a
                 href="https://github.com/FRONTENDBOOTCAMP-13th/JS-02-twodari"
-                className="flex items-center gap-5 py-4 font-semibold hover:text-primary hover:after:content-['↗︎']"
+                className="flex items-center gap-2 py-4 font-semibold hover:text-primary hover:after:content-['↗︎']"
               >
-                <FaGithub className="size-7" />
+                <FaGithub className="size-5" />
                 Githube
               </a>
             </div>
@@ -46,14 +46,14 @@ export default function Project2() {
               alt="코드의 그림자 프로젝트 썸네일"
               width="300"
               height="200"
-              className="hidden mt-10 md:block md:w-130 md:h-100"
+              className="hidden mt-5 md:block md:w-110 md:h-80"
             />
             <p className="font-bold md:text-lg text-primary">TECH STACK.</p>
-            <p className=" md:text-lg">TypeScript, HTML5, Tailwind CSS</p>
+            <p className="text-sm md:text-lg">TypeScript, HTML5, Tailwind CSS</p>
           </div>
 
           {/* 프로젝트 세부설명 */}
-          <div className="flex flex-col justify-center space-y-4">
+          <div className="flex flex-col justify-center space-y-2">
             <div className="overflow-hidden ">
               <button
                 onClick={() => toggle(0)}
