@@ -8,23 +8,23 @@ export default function Project2() {
     setOpen(open === index ? -1 : index);
   };
   return (
-    <div className="container w-full max-w-screen-xl min-h-[90vh] md:min-h-screen px-6  py-12 mx-auto">
-      <div className="flex flex-col w-full min-h-screen">
+    <div className="container w-full max-w-screen-xl px-4 py-6 mx-auto md:px-6 md:py-12">
+      <div className="flex flex-col w-full max-h-[calc(100dvh-3rem)] md:max-h-none overflow-y-auto md:overflow-visible">
         {/* 타이틀 */}
         <div className="font-bold text-primary text-[clamp(1.875rem,6vw,6rem)] whitespace-nowrap tracking-tight m-3">
           <p>PROJECT 2.</p>
         </div>
         {/* 프로젝트 소개*/}
-        <div className="grid gap-6 px-3 mt-2 md:gap-10 md:grid-cols-2 md:mt-3">
+        <div className="grid gap-4 px-3 mt-2 md:gap-10 md:grid-cols-2 md:mt-3">
           <div>
             <p className="mb-2 text-lg font-semibold md:text-2xl ">
               코드의 그림자 <span className="font-bold period-mark">.</span>
             </p>
 
-            <p className="mb-2 text-md md:text-xl">2025.05 - 2025.05 (2주)</p>
+            <p className="mb-2 text-sm md:text-xl">2025.05 - 2025.05 (2주)</p>
             <p className="md:text-lg ">Vanilla TS 기반의 인터랙티브 방탈출 게임</p>
 
-            <div className="flex gap-10 justify-baseline">
+            <div className="flex gap-6 justify-baseline">
               <a
                 href="https://codeofshadow.netlify.app/"
                 className="flex items-center gap-2 py-4  font-semibold hover:text-primary hover:after:content-['↗︎']"
@@ -49,12 +49,12 @@ export default function Project2() {
               className="hidden mt-5 md:block md:w-110 md:h-80"
             />
             <p className="font-bold md:text-lg text-primary">TECH STACK.</p>
-            <p className="text-sm md:text-lg">TypeScript, HTML5, Tailwind CSS</p>
+            <p className="text-xs md:text-lg">TypeScript, HTML5, Tailwind CSS</p>
           </div>
 
           {/* 프로젝트 세부설명 */}
           <div className="flex flex-col justify-center space-y-2">
-            <div className="overflow-hidden ">
+            <div className="overflow-hidden border border-[var(--color-border)] rounded-lg">
               <button
                 onClick={() => toggle(0)}
                 className={`w-full text-left px-5 py-4 cursor-pointer font-semibold md:text-2xl transition-colors ${
@@ -68,10 +68,10 @@ export default function Project2() {
 
               <div
                 className={`px-6 transition-all duration-500 ease-in-out overflow-hidden ${
-                  open === 0 ? "max-h-[600px] py-4" : "max-h-0"
+                  open === 0 ? "max-h-[1000px] py-4" : "max-h-0"
                 }`}
               >
-                <ul className="pl-5 space-y-5 text-sm leading-relaxed md:text-base">
+                <ul className="pl-5 space-y-5 text-xs leading-relaxed md:text-base">
                   <li>
                     <p className="mb-1 font-bold text-primary">공통 UI</p>
                     <ul className="pl-5 space-y-1 list-disc">
@@ -97,7 +97,7 @@ export default function Project2() {
               </div>
             </div>
 
-            <div className="overflow-hidden ">
+            <div className="overflow-hidden border border-[var(--color-border)] rounded-lg">
               <button
                 onClick={() => toggle(1)}
                 className={`w-full text-left px-5 py-4 font-semibold md:text-2xl  cursor-pointer transition-colors ${
@@ -109,7 +109,7 @@ export default function Project2() {
 
               <div
                 className={`px-6 transition-all duration-500 ease-in-out overflow-hidden ${
-                  open === 1 ? "max-h-[500px] py-4" : "max-h-0"
+                  open === 1 ? "max-h-[1000px] py-4" : "max-h-0"
                 }`}
               >
                 <ul className="pl-5 space-y-5 text-sm leading-relaxed md:text-base">

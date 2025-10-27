@@ -4,7 +4,7 @@ export default function Contact() {
     <div className="container w-full max-w-screen-xl min-h-screen px-6 mx-auto">
       <div className="flex flex-col justify-between w-full min-h-screen ">
         {/* 큰 타이틀 -위쪽 */}
-        <div className="font-bold text-[clamp(1.875rem,8vw,7rem)] whitespace-nowrap tracking-tight m-3">
+        <div className="font-bold text-[clamp(1.875rem,8vw,6rem)] whitespace-nowrap tracking-tight m-3">
           <p>
             CONTACT
             <span className="font-bold period-mark">.</span>
@@ -54,7 +54,7 @@ export default function Contact() {
         </div>
 
         {/* 큰 타이틀 -아래쪽 */}
-        <div className="text-primary font-bold text-7xl md:text-[clamp(1.875rem,8vw,7rem)] whitespace-nowrap tracking-tight self-end mb-6">
+        <div className="text-primary font-bold text-5xl md:text-6xl lg:text-[clamp(1.875rem,8vw,6rem)] whitespace-nowrap tracking-tight self-end mb-6">
           <p>THANK YOU.</p>
         </div>
       </div>

@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko" suppressHydrationWarning>
-      <body className=" bg-[var(--color-bg)] text-[var(--color-text)] font-basic overflow-x-hidden]">
+      <body className="min-h-dvh  bg-[var(--color-bg)] text-[var(--color-text)] font-basic overflow-x-hidden]">
         {/* 다크모드 감지 */}
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="flex flex-col mx-auto">

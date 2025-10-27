@@ -31,42 +31,48 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="h-screen overflow-y-scroll snap-y snap-mandatory">
-      <section id="intro" className="h-screen snap-start">
+    <div
+      className="overflow-y-scroll h-dvh snap-y snap-mandatory"
+      style={{
+        WebkitOverflowScrolling: "touch",
+        overscrollBehavior: "none",
+      }}
+    >
+      <section id="intro" className="flex items-center justify-center min-h-dvh snap-start">
         <Header />
       </section>
 
       <section
         id="project"
-        className="h-screen snap-start bg-[var(--color-bg)] flex items-center justify-center rounded-t-[3rem] rounded-b-[3rem] shadow-xl z-20 relative"
+        className="min-h-dvh md:h-dvh snap-start bg-[var(--color-bg)] flex items-center justify-center rounded-t-[3rem] rounded-b-[3rem] shadow-xl z-20 relative"
       >
         <Project1 />
       </section>
 
       <section
         id="project2"
-        className="h-screen snap-start bg-[var(--color-bg)]  flex items-center justify-center rounded-t-[3rem] rounded-b-[3rem] shadow-xl z-20 relative"
+        className="min-h-dvh md:h-dvh snap-start bg-[var(--color-bg)]  flex items-center justify-center rounded-t-[3rem] rounded-b-[3rem] shadow-xl z-20 relative"
       >
         <Project2 />
       </section>
 
       <section
         id="skills"
-        className="h-screen snap-start bg-[var(--color-bg-dark)] text-[var(--color-text-inverse)]  flex items-center justify-center rounded-t-[3rem] rounded-b-[3rem] shadow-xl z-30 relative"
+        className="min-h-dvh md:h-dvh snap-start bg-[var(--color-bg-dark)] text-[var(--color-text-inverse)]  flex items-center justify-center rounded-t-[3rem] rounded-b-[3rem] shadow-xl z-30 relative"
       >
         <Skills />
       </section>
 
       <section
         id="experience"
-        className="h-screen snap-start bg-primary  flex items-center justify-center rounded-t-[3rem] rounded-b-[3rem] shadow-xl z-30 relative"
+        className="min-h-dvh md:h-dvh snap-start bg-primary  flex items-center justify-center rounded-t-[3rem] rounded-b-[3rem] shadow-xl z-30 relative"
       >
         <Experience />
       </section>
 
       <section
         id="contact"
-        className="bg-[var(--color-bg)] h-screen snap-start flex items-center justify-center z-40 relative"
+        className="bg-[var(--color-bg)] min-h-dvh snap-start flex items-center justify-center z-40 relative"
       >
         <Contact />
       </section>
